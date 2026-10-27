@@ -1,0 +1,51 @@
+/*estilo dos relatorios*/
+
+header p {
+    margin-bottom: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: var(--cor-branca);
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+th, td {
+    border: 1px solid #d1d5db;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--azul-principal);
+    color: var(--cor-branca);
+}
+
+/*estilo para impressao*/
+@media print {
+    nav, form, footer {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    table {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,50 @@
+/* Cabeçalho loja */
+
+header {
+    background-color: var(--azul-principal);
+    color: var(--cor-branca);
+    padding: 20px;
+    
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Menu de navegação */
+
+nav {
+    background-color: var(--azul-secundario);
+    padding: 12px;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--cor-branca);
+    text-decoration: none; /*remove o sublinhado padrão dos links */
+
+}
+
+nav a:hover {
+    text-decoration: underline; /* acrescenta efeito sublinhado ao link quando o mouse está sobre ele */
+}
+
+nav a:focus-visible {
+    outline: 2px solid var(--cor-branca); /* acrescenta efeito de acessibilidade tipo moldura ao selecionar com tab */
+    outline-offset: 4px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--azul-principal);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 15px;
+}

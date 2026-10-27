@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ByteTech</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ByteTech</h1>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="menu-hamburguer">
+        <label for="menu-hamburguer" class="icone-menu">&#9776; Menu</label>
+        <div class="links-menu">
+            <a href="index.html">Início</a>
+            <a href="loja.html">Loja</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="login.html" aria-current="page">Login</a>
+            <a href="perfil.html">Meu perfil</a>
+            <a href="relatorios.html">Relatórios</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Entrar na ByteTech</h2>
+
+            <p>Informe seu e-mail e sua senha para acessar sua conta.</p>
+
+            <form id="form-login" action="#" method="post">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Digite seu e-mail"
+                       autocomplete="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha"
+                       placeholder="Digite sua senha"
+                       autocomplete="current-password" required>
+
+                <button class="botao" type="submit">Entrar</button>
+
+            </form>
+
+            <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ByteTech — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

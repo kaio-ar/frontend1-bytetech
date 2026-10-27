@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - ByteTech</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+
+    <!--cabeçalho -->
+    <header>
+        <h1>ByteTech</h1>
+    </header>
+
+    <!--menu de navegação -->
+    <nav>
+        <input type="checkbox" id="menu-hamburguer">
+        <label for="menu-hamburguer" class="icone-menu">&#9776; Menu</label>
+        <div class="links-menu">
+            <a href="index.html">Início</a>
+            <a href="loja.html">Loja</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="login.html">Login</a>
+            <a href="perfil.html">Meu perfil</a>
+            <a href="relatorios.html">Relatórios</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal -->
+    <main>
+
+        <!-- Busca e filtros -->
+        <section>
+            <h2>Nossa Loja</h2>
+            <p>Encontre os equipamentos e acessórios ideais para você.</p>
+
+            <form>
+                <label for="busca">Buscar produto:</label>
+                <input type="search" id="busca" name="busca" placeholder="Digite o nome do produto">
+
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Todas as categorias</option>
+                    <option value="perifericos">Periféricos</option>
+                    <option value="componentes">Componentes</option>
+                    <option value="monitores">Monitores</option>
+                    <option value="acessorios">Acessórios</option>
+                </select>
+
+                <label for="preco">Faixa de preço:</label>
+                <select id="preco" name="preco">
+                    <option value="">Todas as faixas</option>
+                    <option value="ate100">Até R$ 100</option>
+                    <option value="100a300">R$ 100 a R$ 300</option>
+                    <option value="acima300">Acima de R$ 300</option>
+                </select>
+
+                <label for="ordenacao">Ordenar por:</label>
+                <select id="ordenacao" name="ordenacao">
+                    <option value="nome">Nome</option>
+                    <option value="menor-preco">Menor preço</option>
+                    <option value="maior-preco">Maior preço</option>
+                </select>
+
+                <button class="botao" type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <!-- Catálogo de produtos -->
+        <section>
+            <h2>Produtos disponíveis</h2>
+
+            <div class="galeria-produtos">
+
+                <article class="cartao-produto">
+                    <img src="img/ambiente-informatica.png" alt="Mouse gamer">
+                    <h3>Mouse Gamer</h3>
+                    <p>Mouse para jogos e uso diário.</p>
+                    <p class="preco">R$ 89,90</p>
+                    <button class="botao" type="button">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="cartao-produto">
+                    <img src="img/ambiente-informatica.png" alt="Teclado mecânico">
+                    <h3>Teclado Mecânico</h3>
+                    <p>Teclado para digitação e jogos.</p>
+                    <p class="preco">R$ 199,90</p>
+                    <button class="botao" type="button">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="cartao-produto">
+                    <img src="img/ambiente-informatica.png" alt="Headset gamer">
+                    <h3>Headset Gamer</h3>
+                    <p>Fone de ouvido com microfone.</p>
+                    <p class="preco">R$ 149,90</p>
+                    <button class="botao" type="button">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="cartao-produto">
+                    <img src="img/ambiente-informatica.png" alt="Mousepad grande">
+                    <h3>Mousepad Grande</h3>
+                    <p>Superfície ampla para o mouse.</p>
+                    <p class="preco">R$ 59,90</p>
+                    <button class="botao" type="button">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="cartao-produto">
+                    <img src="img/ambiente-informatica.png" alt="Webcam Full HD">
+                    <h3>Webcam Full HD</h3>
+                    <p>Ideal para reuniões e videochamadas.</p>
+                    <p class="preco">R$ 129,90</p>
+                    <button class="botao" type="button">Adicionar ao carrinho</button>
+                </article>
+
+                <article class="cartao-produto">
+                    <img src="img/ambiente-informatica.png" alt="Monitor de 24 polegadas">
+                    <h3>Monitor 24 polegadas</h3>
+                    <p>Monitor para estudo, trabalho e lazer.</p>
+                    <p class="preco">R$ 799,90</p>
+                    <button class="botao" type="button">Adicionar ao carrinho</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!--carrinho de compras-->
+        <section>
+            <h2>Meu Carrinho</h2>
+
+            <table>
+                <caption>Produtos selecionados para compra</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço unitário</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Mouse Gamer</td>
+                        <td>R$ 89,90</td>
+                        <td>1</td>
+                        <td>R$ 89,90</td>
+                        <td><button type="button">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>Teclado Mecânico</td>
+                        <td>R$ 199,90</td>
+                        <td>1</td>
+                        <td>R$ 199,90</td>
+                        <td><button type="button">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>Headset Gamer</td>
+                        <td>R$ 149,90</td>
+                        <td>1</td>
+                        <td>R$ 149,90</td>
+                        <td><button type="button">Remover</button></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="3">Total</th>
+                        <td colspan="2">R$ 439,70</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <button class="botao" type="button">Finalizar compra</button>
+
+            <!-- Confirmação inicialmente oculta -->
+            <div id="confirmacao-compra" hidden>
+                <h3>Compra finalizada!</h3>
+                <p>Obrigado por comprar na ByteTech.</p>
+                <p>Número do pedido: CP001</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 ByteTech — Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

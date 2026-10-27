@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios - ByteTech</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/relatorios.css">
+</head>
+<body>
+    <!--cabeçalho-->
+    <header>
+        <h1>ByteTech</h1>
+        <p>Área administrativa</p>
+    </header>
+    <!--menu de navegação-->
+    <nav>
+        <input type="checkbox" id="menu-hamburguer">
+        <label for="menu-hamburguer" class="icone-menu">&#9776; Menu</label>
+        <div class="links-menu">
+            <a href="index.html">Início</a>
+            <a href="loja.html">Loja</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="login.html">Login</a>
+            <a href="perfil.html">Meu perfil</a>
+            <a href="relatorios.html" aria-current="page">Relatórios</a>
+        </div>
+    </nav>
+    <main>
+        <h2>Relatórios da ByteTech</h2>
+        <p>Data do relatório: 23/10/2026</p>
+        <p>Horário de referência: 14h30</p>
+        <!--busca de clientes-->
+        <section>
+            <h2>Clientes cadastrados</h2>
+            <form>
+                <label for="busca-cliente">Buscar cliente:</label>
+                <input type="search" id="busca-cliente" name="busca-cliente" placeholder="Digite o nome do cliente">
+                <button class="botao" type="submit">Buscar</button>
+            </form>
+            <table>
+                <caption>Lista de clientes cadastrados</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nome</th>
+                        <th scope="col">E-mail</th>
+                        <th scope="col">Cidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>Ana Silva</td>
+                        <td>ana@email.com</td>
+                        <td>São José</td>
+                    </tr>
+                    <tr>
+                        <td>1002</td>
+                        <td>Pedro Souza</td>
+                        <td>pedro@email.com</td>
+                        <td>Florianópolis</td>
+                    </tr>
+                    <tr>
+                        <td>1003</td>
+                        <td>Mariana Costa</td>
+                        <td>mariana@email.com</td>
+                        <td>Palhoça</td>
+                    </tr>
+                    <tr>
+                        <td>1004</td>
+                        <td>Lucas Oliveira</td>
+                        <td>lucas@email.com</td>
+                        <td>Biguaçu</td>
+                    </tr>
+                    <tr>
+                        <td>1005</td>
+                        <td>Julia Martins</td>
+                        <td>julia@email.com</td>
+                        <td>São José</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!--busca de compras-->
+        <section>
+            <h2>Compras realizadas</h2>
+            <form>
+                <label for="busca-compra">Buscar compra:</label>
+                <input type="search" id="busca-compra" name="busca-compra" placeholder="Digite o nome do cliente ou produto">
+                <button class="botao" type="submit">Buscar</button>
+            </form>
+            <table>
+                <caption>Lista de compras registradas</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Pedido</th>
+                        <th scope="col">Cliente</th>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10001</td>
+                        <td>Ana Silva</td>
+                        <td>Mouse Gamer</td>
+                        <td>10/10/2026</td>
+                        <td>R$ 89,90</td>
+                    </tr>
+                    <tr>
+                        <td>10002</td>
+                        <td>Pedro Souza</td>
+                        <td>Teclado Mecânico</td>
+                        <td>12/10/2026</td>
+                        <td>R$ 199,90</td>
+                    </tr>
+                    <tr>
+                        <td>10003</td>
+                        <td>Mariana Costa</td>
+                        <td>Headset Gamer</td>
+                        <td>15/10/2026</td>
+                        <td>R$ 149,90</td>
+                    </tr>
+                    <tr>
+                        <td>10004</td>
+                        <td>Lucas Oliveira</td>
+                        <td>Webcam Full HD</td>
+                        <td>20/10/2026</td>
+                        <td>R$ 129,90</td>
+                    </tr>
+                    <tr>
+                        <td>10005</td>
+                        <td>Julia Martins</td>
+                        <td>Monitor 24 polegadas</td>
+                        <td>25/10/2026</td>
+                        <td>R$ 799,90</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="4">Total das compras</th>
+                        <td>R$ 1.369,50</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <!--rodapé-->
+    <footer>
+        <p>&copy; 2026 ByteTech — Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

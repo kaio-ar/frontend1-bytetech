@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - ByteTech</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ByteTech</h1>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="menu-hamburguer">
+        <label for="menu-hamburguer" class="icone-menu">&#9776; Menu</label>
+        <div class="links-menu">
+            <a href="index.html">Início</a>
+            <a href="loja.html">Loja</a>
+            <a href="cadastro.html">Cadastro</a>
+            <a href="login.html">Login</a>
+            <a href="perfil.html" aria-current="page">Meu perfil</a>
+            <a href="relatorios.html">Relatórios</a>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Meu Perfil</h2>
+            <p>Confira seus dados cadastrados na ByteTech</p>
+
+            <form>
+                <label for="id=cliente">ID do cliente:</label>
+                <input type="text" id="id-cliente" name="id-cliente"
+                    value="1001" readonly>
+
+                <label for="nome">Nome completo:</label>
+                <input type="text" id="nome" name="nome"
+                    value="Kaio Ramos" autocomplete="name">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email"
+                value="kaio@email.com" autocomplete="email">
+
+                <button class="botao" type="button">Salvar alterações</button>
+
+
+            </form>
+
+        </section>
+
+        <section>
+            <h2>Meus Pedidos</h2>
+            <table>
+                <caption>Histórico de pedidos do Cliente</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Pedido</th>
+                        <th scope="col">Data</th>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Status</th>                                             
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>10001</td>
+                        <td>10/10/2026</td>
+                        <td>Mouse Gamer</td>
+                        <td>R$ 89,90</td>
+                        <td>Entregue</td>
+                    </tr>
+
+                    <tr>
+                        <td>10002</td>
+                        <td>18/10/2026</td>
+                        <td>Teclado Mecânico</td>
+                        <td>R$ 199,90</td>
+                        <td>Em transporte</td>
+                    </tr>
+
+                    <tr>
+                        <td>10003</td>
+                        <td>23/10/2026</td>
+                        <td>Headset Gamer</td>
+                        <td>R$ 149,90</td>
+                        <td>Processando</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ByteTech — Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

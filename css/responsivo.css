@@ -1,0 +1,82 @@
+/*ajustes para tablets*/
+@media (max-width: 1024px) {
+    .galeria-produtos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    main {
+        padding: 15px;
+    }
+}
+
+/*configurações do menu hamburguer*/
+.icone-menu {
+    display: none;
+}
+
+#menu-hamburguer {
+    position: absolute;
+    opacity: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    .icone-menu {
+        display: block;
+        color: white;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .links-menu {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 12px;
+    }
+
+    #menu-hamburguer:checked ~ .links-menu {
+        display: flex;
+    }
+
+    #menu-hamburguer:focus-visible + .icone-menu {
+        outline: 2px solid white;
+        outline-offset: 2px;
+    }
+}
+
+/*ajustes para celulares*/
+@media (max-width: 320px) {
+    .galeria-produtos {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 5px;
+        overflow-wrap: anywhere;
+    }
+
+    form input, form select {
+        min-width: 0;
+    }
+
+    .cartao-produto {
+        padding: 12px;
+    }
+}
